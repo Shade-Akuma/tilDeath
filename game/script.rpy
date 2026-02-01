@@ -60,12 +60,13 @@ init python:
 
 
 define b = Character("Bubonnie", who_color="#010B13", callback=adaptive_text_sounds)
-
+define n = Character(" ", who_color="#464646")
 transform hop:
     yalign 0
     linear 0.1 ypos 0.1
     linear 0.1 ypos 0
     
+define favor = int 
 
 # The game starts here.
 
@@ -75,7 +76,41 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
+    scene introcg
+
+    # These display lines of dialogue.
+
+    n "The black plague... This damned blight that swept over our little village in the blink of an eye."
+
+    n "A silent killer, one far more merciless and indiscriminate than any brigand or fiend."
+    
+    n "Friends, family, pets, predators, prey, even the fauna."
+
+    n "Nothing seems to be spared in the path of its grim sentencing."
+
+    n "Red marks splattered across doors signal the inevitable approach of death."
+
+    n "And unexpected swelling bears an ill omen for your longevity."
+
+    n "..."
+
+    n "It was yesterday morning that I noticed a painful, bulbous shape begin to form in the crevice of my armpit."
+
+    n "A sharp dread washed over me, knowing that my time left had suddenly become limited."
+
+    n "I spoke to our pastor through the booth of a confessional at the earliest opportunity, seeking to confide in our lord in my time of need."
+
+    n "The man told me that if prayer was not enough to settle my wary heart, that a plague doctor would be visiting our village by the next day's dawn."
+
     scene villagebg
+
+    n "And so here I find myself, seeking out a harbinger in black."
+
+    n "Praying that my salvation is not too far gone."
+
+    n "An imposing figure slowly makes its way down the village path."
+
+    n "My heart races as I step out into the road, hoping to draw their attention."
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -83,9 +118,7 @@ label start:
 
     show bbgreeting at hop
 
-    # These display lines of dialogue.
-
-    b "{cps=50}Hello there. You look... Unwell. How can I help you?"
+    b "{cps=40}Greetings."
 
     # This ends the game.
 
