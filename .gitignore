@@ -1,0 +1,65 @@
+# Directories that Ren'Py changes files in.
+/game/saves
+/game/cache
+
+# Compiled script files. These are important for saving, and so should
+# be preserved by developer and build systems after the game has been released.
+/game/**/*.rpyc
+/game/**/*.rpymc
+
+# Files Ren'Py can generate.
+/game/**/*.bak
+/game/**/*.new
+/game/**/*.old
+
+# Error, log, and output files.
+/errors.txt
+/files.txt
+/image_cache.txt
+/log.txt
+/save_dump.txt
+/traceback.txt
+
+# Launcher-generated files.
+/dialogue.tab
+/dialogue.txt
+/strings.json
+
+### Renpy ###
+# Don't track content of these folders #
+########################################
+cache/
+saves/
+
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+*.rpyc 
+*.rpyb 
+*.rpymc 
+*.pyc 
+*.pyo
+*~ 
+*.bak 
+*.odt#
+
+tmp 
+env 
+_wfCache
+
+# The log file and other misc things #
+######################################
+log.txt
+errors.txt
+traceback.txt
+files.txt
+text_overflow.txt
+
+# End of https://www.toptal.com/developers/gitignore/api/renpy
